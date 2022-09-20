@@ -1,0 +1,18 @@
+.mainNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    height: 85px;
+}
+.planetsLinks {
+    list-style-type: none;
+    text-transform: uppercase;
+    display: flex;
+}
+.planetsLinks li {
+    padding-left: 33px;
+}
+.planetsLinks li a {
+    text-decoration: none;
+}

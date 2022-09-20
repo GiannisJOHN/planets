@@ -1,13 +1,61 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --primary-color: #070724;
+  --secondary-color: #38384f;
+  --grey-color: #838391;
+  --headings-text-color: #ffffff;
+  --mercury-color: #419EBB;
+  --venus-color: #EDA249;
+  --earth-color: #6f2ed6;
+  --mars-color: #D14C32;
+  --jupiter-color: #D83A34;
+  --saturn-color: #CD5120;
+  --uranus-color: #1ec2a4;
+  --neptune-color: #2d68f0;
 }
+
+h1 {
+  font-size: 80px;
+  font-family: sans-serif;
+  font-weight: 600;
+  line-height: 103px;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: sans-serif;
+  font-weight: 600;
+  line-height: 52px;
+  letter-spacing: -1.5px;
+}
+
+h3 {
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: bold;
+  line-height: 25px;
+  letter-spacing: 2.6px;
+}
+
+h4 {
+  font-size: 11px;
+  font-family: sans-serif;
+  font-weight: bold;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+.logo {
+  font-size: 28px;
+  font-family: sans-serif;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: -1.05px;
+}
+

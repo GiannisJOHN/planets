@@ -1,8 +1,16 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@400;500&family=League+Spartan:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+}
+
+body {
   font-family: sans-serif;
+  background-color: var(--primary-color);
+  color: white;
+  background-image: url(./assets/background-stars.svg);
 }
 
 :root {
@@ -10,45 +18,73 @@ body {
   --secondary-color: #38384f;
   --grey-color: #838391;
   --headings-text-color: #ffffff;
-  --mercury-color: #419EBB;
-  --venus-color: #EDA249;
-  --earth-color: #6f2ed6;
-  --mars-color: #D14C32;
-  --jupiter-color: #D83A34;
-  --saturn-color: #CD5120;
-  --uranus-color: #1ec2a4;
-  --neptune-color: #2d68f0;
+  --hover-background: rgba(216, 216, 216, 0.2);
+  --border-color: rgba(255, 255, 255, 0.2);
+}
+
+.mercury, [planet=mercury]::before  {
+  background-color: #419EBB;
+}
+.venus, [planet=venus]::before  {
+  background-color: #EDA249;
+}
+.earth, [planet=earth]::before {
+  background-color: #6f2ed6;
+}
+.mars, [planet=mars]::before  {
+  background-color: #D14C32;
+}
+.jupiter, [planet=jupiter]::before {
+  background-color: #D83A34;
+}
+.saturn, [planet=saturn]::before  {
+  background-color: #CD5120;
+}
+.uranus, [planet=uranus]::before {
+  background-color: #1ec2a4;
+}
+.neptune, [planet=neptune]::before {
+  background-color: #2d68f0;
 }
 
 h1 {
   font-size: 80px;
   font-family: sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 103px;
+  font-family: 'Antonio', sans-serif;
+  text-transform: uppercase;
 }
 
 h2 {
   font-size: 40px;
   font-family: sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 52px;
   letter-spacing: -1.5px;
+  font-family: 'Antonio', sans-serif;
+  margin: 0;
 }
 
-h3 {
+h3, .desktopTab a {
   font-size: 12px;
   font-family: sans-serif;
   font-weight: bold;
   line-height: 25px;
   letter-spacing: 2.6px;
+  margin: 0;
 }
-
 h4 {
   font-size: 11px;
   font-family: sans-serif;
   font-weight: bold;
   line-height: 25px;
   letter-spacing: 1px;
+  opacity: 0.5;
+  margin: 0;
+}
+ol {
+  padding: 0;
 }
 
 .logo {
@@ -59,3 +95,19 @@ h4 {
   letter-spacing: -1.05px;
 }
 
+.theme-border {
+  border: 1px solid var(--border-color);
+}
+.planet-main-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 40px;
+}
+@media (max-width: 730px) {
+  .planet-main-wrapper {
+    padding: 0 24px;
+  }
+}

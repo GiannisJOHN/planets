@@ -14,25 +14,23 @@ function PlanetContainer() {
         }
     })
     
-    let planetName = params.planet
-    let images = {
-        overview : require(`../../assets/planet-${planetName}.svg`),
-        structure : require(`../../assets/planet-${planetName}-internal.svg`),
-        geology : require(`../../assets/geology-${planetName}.png`)
-    }
-    //import(`../../assets/${n}.svg`).then(image => console.log(image, 200))
-
     let name, info, source, img
 
     if (params.planet === undefined) {
         name = data[0].name
         info = data[0].overview.content
         source = data[0].overview.source
-        img = require(`../../assets/planet-${name}.svg`)
+        img = require(`../../assets/planet-${name.toLowerCase()}.svg`)
     } else {
         name = planetInformation[0].name
         info = planetInformation[0][params.tab].content
         source = planetInformation[0][params.tab].source
+
+        let images = {
+            overview : require(`../../assets/planet-${name.toLowerCase()}.svg`),
+            structure : require(`../../assets/planet-${name.toLowerCase()}-internal.svg`),
+            geology : require(`../../assets/geology-${name.toLowerCase()}.png`)
+        }
         img = images[params.tab]
     }
 

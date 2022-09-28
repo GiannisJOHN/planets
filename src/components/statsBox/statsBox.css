@@ -1,0 +1,35 @@
+.stats-box {
+    width: 100%;
+    max-width: 255px;
+    height: 128px;
+    padding: 20px 23px 23px 27px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 970px) {
+    .stats-box {
+        height: 88px;
+        padding: 0 48px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .stats-box-title {
+        font-size: 24px;
+        line-height: normal;
+    }
+    .stats-box-subtitle {
+        line-height: normal;
+    }
+}
+@media (max-width: 730px) {
+    .stats-box {
+       max-width: none;
+       flex-direction: row;
+       justify-content: space-between;
+       align-items: center;
+       padding: 0 48px;
+
+    }
+}

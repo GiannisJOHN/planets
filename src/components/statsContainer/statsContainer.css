@@ -1,0 +1,15 @@
+.stats-container {
+    width: 100%;
+    max-width: 1110px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 87px;
+    margin-bottom: 56px;
+    gap: 10px;
+}
+@media (max-width: 730px) {
+    .stats-container {
+        flex-direction: column;
+        gap: 8px;
+    }
+}

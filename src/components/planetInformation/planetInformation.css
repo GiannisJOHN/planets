@@ -1,0 +1,74 @@
+.planet-container {
+    width: 100%;
+    max-width: 1110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 96px;
+}
+.planet-container > div:last-child {
+    max-width: 500px;
+}
+.planet-container ol {
+    width: 100%;
+    max-width: 350px;
+}
+.planet-title {
+    margin: 0 0 23px 0;
+}
+.planet-content-text {
+    font-size: 14px;
+    line-height: 25px;
+    margin: 0;
+    max-width: 350px;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 400;
+}
+.planet-container > div:first-child {
+    width: 100%;
+    max-width: 630px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.planet-container > div:first-child img {
+    max-width: 582px;
+}
+@media (max-width: 970px) {
+    .planet-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .planet-container > div:first-child {
+        height: 460px;
+    }
+    .planet-container > div:first-child img {
+        max-width: 369px;
+    }
+    .planet-container > div:last-child {
+        width: 100%;
+        max-width: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .planet-title {
+        margin-top: 0;
+        font-size: 48px;
+        font-weight: 400;
+    }
+}
+@media (max-width: 730px) {
+    .planet-title, .planet-content-text {
+        text-align: center;
+    }
+    .planet-container > div:last-child {
+        flex-direction: column;
+    }
+    .planet-content-text { 
+        max-width: none; 
+    }
+    .planet-container ol {
+        display: none;
+    }
+}

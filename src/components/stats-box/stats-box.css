@@ -33,3 +33,8 @@
 
     }
 }
+@media (max-width: 430px) {
+    .stats-box {
+       padding: 0 18px;
+    }
+}

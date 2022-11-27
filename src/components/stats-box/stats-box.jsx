@@ -1,5 +1,5 @@
 
-import './statsBox.css'
+import './stats-box.css'
 
 function StatsBox(props) {
 

@@ -1,7 +1,7 @@
 
-import { Link, useParams } from "react-router-dom";
-import  { dynamicHtmlClasses } from '../../utils/utils.js'
-import { useState } from "react";
+import { Link, useParams } from "react-router-dom"
+import  { dynamicHtmlClasses } from '../../utils/dynamic-html-classes/dynamic-html-classes.js'
+import { useState } from "react"
 //css
 import './navbar.css'
 

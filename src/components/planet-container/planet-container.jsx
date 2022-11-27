@@ -1,4 +1,4 @@
-import PlanetInformation from "../planetInformation/planetInformation"
+import PlanetInformation from "../planet-information/planet-information"
 import data from '../../data/data.json'
 import { useParams } from 'react-router-dom'
 

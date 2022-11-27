@@ -1,8 +1,8 @@
 
 import { Link, useParams } from "react-router-dom"
-import  { dynamicHtmlClasses } from '../../utils/utils.js'
+import  { dynamicHtmlClasses } from '../../utils/dynamic-html-classes/dynamic-html-classes.js'
 
-import './desktopTabs.css'
+import './desktop-tabs.css'
 
 function DesktopTabs(props) {
     let tabName = useParams().tab

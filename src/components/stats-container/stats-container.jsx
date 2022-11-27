@@ -1,7 +1,7 @@
 import data from '../../data/data.json'
 import {useParams} from 'react-router-dom'
-import StatsBox from '../statsBox/statsBox'
-import './statsContainer.css'
+import StatsBox from '../stats-box/stats-box'
+import './stats-container.css'
 
 function StatsContainer() {
 

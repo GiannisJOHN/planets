@@ -19,11 +19,6 @@
     "eject": "react-scripts eject",
     "lint": "eslint src/**/*.js src/**/*.jsx"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app/jest"
-    ]
-  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -44,3 +39,5 @@
     "eslint-plugin-react": "^7.31.10"
   }
 }
+
+

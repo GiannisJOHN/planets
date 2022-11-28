@@ -1,6 +1,6 @@
 
 
-function tabsHOC    (Component) {
+function tabsHOC (Component) {
     let tabs = [
         {
             parameter: 'overview',

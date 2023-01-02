@@ -1,4 +1,4 @@
-import DesktopTabs from '../desktop-tabs/desktop-tabs.jsx'
+import Tabs from '../tabs/tabs.jsx'
 import tabsHOC from '../../high-order-components/tabs-HOC.js'
 
 import './planet-information.css'
@@ -16,7 +16,7 @@ function PlanetInformation(props) {
                     <p className='planet-content-text'>{props.info}</p>
                     <p>Source: <b><a href={props.source} target='_blank' rel="noreferrer">Wikipedia</a></b></p><img src="" alt="" />
                 </div>
-                {tabsHOC(DesktopTabs)}
+                {tabsHOC(Tabs, 'desktop')}
             </div>
         </main>
     )

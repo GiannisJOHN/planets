@@ -68,7 +68,4 @@
     .planet-content-text { 
         max-width: none; 
     }
-    .planet-container ol {
-        display: none;
-    }
 }

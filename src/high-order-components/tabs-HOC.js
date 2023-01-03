@@ -1,19 +1,7 @@
 
-import { useParams } from "react-router-dom"
 
-function tabsHOC (Component, view) {
+function tabsHOC (Component, view, planetName) {
 
-    let tabName = useParams().tab
-
-    let planetName = useParams().planet
-    
-    if (tabName === undefined) {
-        planetName = 'mercury'
-        tabName = 'overview'
-    } else {
-        planetName.toLowerCase()
-    }
-    
     let tabsText = [
         {
             parameter: 'overview',
@@ -45,8 +33,6 @@ function tabsHOC (Component, view) {
     return  <Component 
     tabsText={tabsText} 
     class={view === 'desktop' ? desktopClasses : mobileClasses}
-    urlTabName={tabName}
-    urlPlanetName={planetName}
     />
 }
 

@@ -1,39 +1,36 @@
 
-import { Link, useParams } from "react-router-dom"
+import { Link } from "react-router-dom"
 import  { dynamicHtmlClasses } from '../../utils/dynamic-html-classes/dynamic-html-classes.js'
 import { useState } from "react"
+import useCheckParams from "../../custom-hooks/use-check-params.js"
 //css
 import './navbar.css'
 
 function Navbar() {
     const [mobileMenuOnScreen, setmobileMenuOnScreen] = useState(window.matchMedia('(max-width: 730px)').matches)
     const [mobileMenuClosed, setmobileMenuClosed] = useState(true)
-    
-    const planets = ['mercury', 'venus', 'earth', 'mars', 'jupiter', 'saturn', 'uranus', 'neptune']
-    let planetName = useParams().planet
+    let planetName = useCheckParams()[0]
 
+    const planets = ['mercury', 'venus', 'earth', 'mars', 'jupiter', 'saturn', 'uranus', 'neptune']
+    
     
     window.matchMedia('(max-width: 730px)').addEventListener('change', (e) => {
         e.matches === true ? setmobileMenuOnScreen(true) : setmobileMenuOnScreen(false)
     })
-
+    
     function displayMenu() {
         if (mobileMenuOnScreen) {
-           if (mobileMenuClosed) {
+            if (mobileMenuClosed) {
                 return {display: 'none'}
-           } else {
+            } else {
                 return {display: 'flex'}
-           }
+            }
         } else {
             return {display: 'flex'}
         }
     }
+    
 
-    if (planetName === undefined) {
-        planetName = 'mercury'
-    } else {
-        planetName.toLowerCase()
-    }
     let htmlClasses = {
         active : `navbar-list-item is-active ${planetName}`,
         inactive : 'navbar-list-item'

@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Frontendmentor.io challenge ‘Planets fact site’
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- [Overview](#overview)
+- [Html](#html)
+- [Css naming conventions](#css-naming-conventions)
+- [Css strategy](#css-strategy)
+- [Responsive Design](#responsive-design)
+- [JavaScript](#javascript)
+- [React](#react)
+- [Tooling](#tooling)
 
-## Available Scripts
+### Overview
+This is a solution to the ‘Planets fact site’ challenge, designed by Frontend Mentor. It is a Single Page Application built with React.js and React-Router.
 
-In the project directory, you can run:
+### Html
+I always consider writing semantic and valid HTML5
 
-### `yarn start`
+### Css naming conventions
+I used structural naming convention which means that you name elements by describing what they are, and not where they are or how they look.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Css Strategy
+inspired from OOCSS, I separate layout from theme through different classes applied to the same element.
+Layout properties include those items that impact size and position of elements. ex.
+01. Height
+02. Width
+03. Margin
+04. Padding
+05. Overflow
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Theme refers to the visual aspect of the elements. ex.
+01. Color
+02. Border
+03. Box shadow
+04. Font
+05. Opacity
+06. Animations
 
-### `yarn test`
+### Responsive Design
+In this project, I used media queries and percentages to achieve fluid responsive design.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### JavaScript
 
-### `yarn build`
+When I write JavaScript code, I always use the following design principles.
+01. DRY, Don’t Repeat Yourself
+02. KISS, Keep It simple Stupid
+03. Single Responsibility principle
+04. Separation of concerns, ‘Loose Coupling’
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### React
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+In this project, I implemented the High Order Component Pattern, and I created a custom Hook to remove repetitive logic from components. Doing so, my components are more clear, readable, and maintainable. It also helps to avoid the long file/component syndrome.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Tooling
 
-### `yarn eject`
+I used ESLINT for linting, and JEST with React Testing Library for unit testing.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

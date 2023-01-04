@@ -25,24 +25,30 @@ body {
 .mercury, [planet=mercury]::before  {
   background-color: #419EBB;
 }
+
 .venus, [planet=venus]::before  {
   background-color: #EDA249;
 }
+
 .earth, [planet=earth]::before {
   background-color: #6f2ed6;
 }
 .mars, [planet=mars]::before  {
   background-color: #D14C32;
 }
+
 .jupiter, [planet=jupiter]::before {
   background-color: #D83A34;
 }
+
 .saturn, [planet=saturn]::before  {
   background-color: #CD5120;
 }
+
 .uranus, [planet=uranus]::before {
   background-color: #1ec2a4;
 }
+
 .neptune, [planet=neptune]::before {
   background-color: #2d68f0;
 }
@@ -74,6 +80,7 @@ h3, .desktopTab a {
   letter-spacing: 2.6px;
   margin: 0;
 }
+
 h4 {
   font-size: 11px;
   font-family: sans-serif;
@@ -83,6 +90,7 @@ h4 {
   opacity: 0.5;
   margin: 0;
 }
+
 ol {
   padding: 0;
 }
@@ -98,6 +106,7 @@ ol {
 .theme-border {
   border: 1px solid var(--border-color);
 }
+
 .planet-main-wrapper {
   width: 100%;
   display: flex;
@@ -106,6 +115,7 @@ ol {
   align-items: center;
   padding: 0 40px;
 }
+
 @media (max-width: 730px) {
   .planet-main-wrapper {
     padding: 0 24px;

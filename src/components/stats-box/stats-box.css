@@ -23,6 +23,7 @@
         line-height: normal;
     }
 }
+
 @media (max-width: 730px) {
     .stats-box {
        max-width: none;
@@ -33,6 +34,7 @@
 
     }
 }
+
 @media (max-width: 430px) {
     .stats-box {
        padding: 0 18px;

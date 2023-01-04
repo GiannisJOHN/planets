@@ -5,7 +5,13 @@ import { useState } from "react"
 import useCheckParams from "../../custom-hooks/use-check-params.js"
 //css
 import './navbar.css'
-
+global.matchMedia = global.matchMedia || function() {
+    return {
+        matches : false,
+        addEventListener : function() {},
+        removeEventListener: function() {}
+    }
+} 
 function Navbar() {
     const [mobileMenuOnScreen, setmobileMenuOnScreen] = useState(window.matchMedia('(max-width: 730px)').matches)
     const [mobileMenuClosed, setmobileMenuClosed] = useState(true)

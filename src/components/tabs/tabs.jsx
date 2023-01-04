@@ -14,7 +14,11 @@ function Tabs(props) {
                 props.tabsText.map((eachItem) => {
                     return (
                         <li className={
-                            dynamicHtmlClasses(tabName, eachItem.parameter, props.class.active, props.class.inactive)
+                            dynamicHtmlClasses(
+                                tabName, 
+                                eachItem.parameter, 
+                                props.class.active, 
+                                props.class.inactive)
                         } planet={planetName}>
                             <Link to={`/${planetName}/${eachItem.parameter}`}>
                                 {eachItem.text}

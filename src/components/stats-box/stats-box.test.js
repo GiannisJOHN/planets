@@ -1,5 +1,8 @@
+//@jest-environment jsdom
+import React from "react"
 import StatsBox from "./stats-box"
 import { render, screen } from '@testing-library/react'
+import '@testing-library/jest-dom'
 
 
 

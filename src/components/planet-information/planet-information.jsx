@@ -9,10 +9,10 @@ function PlanetInformation(props) {
     
     return (
         <main className="planet-container">
-            <div>
+            <div className='planet-image-container'>
                 <img src={props.image} alt="" />
             </div>
-            <div>
+            <div className='planet-info-container'>
                 <div>
                     <h1 className='planet-title'>{props.name}</h1>
                     <p className='planet-content-text'>{props.info}</p>

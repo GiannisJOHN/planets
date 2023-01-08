@@ -11,16 +11,17 @@ global.matchMedia = global.matchMedia || function() {
         addEventListener : function() {},
         removeEventListener: function() {}
     }
-} 
+}
+
 function Navbar() {
-    const [mobileMenuOnScreen, setmobileMenuOnScreen] = useState(window.matchMedia('(max-width: 730px)').matches)
+    const [mobileMenuOnScreen, setmobileMenuOnScreen] = useState(window.matchMedia('(max-width: 740px)').matches)
     const [mobileMenuClosed, setmobileMenuClosed] = useState(true)
     let planetName = useCheckParams()[0]
 
     const planets = ['mercury', 'venus', 'earth', 'mars', 'jupiter', 'saturn', 'uranus', 'neptune']
     
     
-    window.matchMedia('(max-width: 730px)').addEventListener('change', (e) => {
+    window.matchMedia('(max-width: 740px)').addEventListener('change', (e) => {
         e.matches === true ? setmobileMenuOnScreen(true) : setmobileMenuOnScreen(false)
     })
     
@@ -54,7 +55,7 @@ function Navbar() {
                         <li className={dynamicHtmlClasses(planetName, eachItem, htmlClasses.active, htmlClasses.inactive)} mobile='true' planet={eachItem} onClick={
                             () => {mobileMenuClosed ? setmobileMenuClosed(false) : setmobileMenuClosed(true)}
                         }>
-                        <Link to={`/${eachItem}/overview`} >{eachItem}</Link>
+                        <Link className='navbar-list-item-link' to={`/${eachItem}/overview`} >{eachItem}</Link>
                         </li>
                         )
                     })

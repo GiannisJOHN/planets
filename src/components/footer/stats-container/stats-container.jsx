@@ -40,14 +40,16 @@ function StatsContainer() {
         }
     ]
 
+    function renderStatsContent() {
+            return stats.map((eachItem) => {
+                return <StatsBox title={eachItem.title} stats={eachItem.value}/>
+            })
+    }
+
     return (
         <>
         <div className='stats-container'>
-            {
-                stats.map((eachItem) => {
-                    return <StatsBox title={eachItem.title} stats={eachItem.value}/>
-                })
-            }
+            {renderStatsContent()}
         </div>
         </>
     )

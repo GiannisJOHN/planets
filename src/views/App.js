@@ -1,8 +1,8 @@
 import Navbar from "../components/navbar/navbar.jsx"
-import PlanetContainer from "../components/planet-container/planet-container.jsx"
-import StatsContainer from "../components/stats-container/stats-container.jsx"
-import Tabs from '../components/tabs/tabs.jsx'
-import tabsHOC from '../high-order-components/tabs-HOC.js'
+import PlanetContainer from "../components/main/planet-container/planet-container.jsx"
+import StatsContainer from "../components/footer/stats-container/stats-container.jsx"
+import Tabs from '../components/main/tabs/tabs.jsx'
+import tabsHOC from '../reusable-logic/high-order-components/tabs-HOC.js'
 
 function App () {
   

@@ -1,5 +1,5 @@
 import PlanetInformation from "../planet-information/planet-information"
-import data from '../../data/data.json'
+import data from '../../../data/data.json'
 import { useParams } from 'react-router-dom'
 
 
@@ -20,16 +20,16 @@ function PlanetContainer() {
         name = data[0].name
         info = data[0].overview.content
         source = data[0].overview.source
-        img = require(`../../assets/planet-${name.toLowerCase()}.svg`)
+        img = require(`../../../assets/planet-${name.toLowerCase()}.svg`)
     } else {
         name = planetInformation[0].name
         info = planetInformation[0][params.tab].content
         source = planetInformation[0][params.tab].source
 
         let images = {
-            overview : require(`../../assets/planet-${name.toLowerCase()}.svg`),
-            structure : require(`../../assets/planet-${name.toLowerCase()}-internal.svg`),
-            geology : require(`../../assets/geology-${name.toLowerCase()}.png`)
+            overview : require(`../../../assets/planet-${name.toLowerCase()}.svg`),
+            structure : require(`../../../assets/planet-${name.toLowerCase()}-internal.svg`),
+            geology : require(`../../../assets/geology-${name.toLowerCase()}.png`)
         }
         img = images[params.tab]
     }

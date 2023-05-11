@@ -1,7 +1,7 @@
 
 import { Link } from "react-router-dom"
-import useCheckParams from "../../custom-hooks/use-check-params.js"
-import  { dynamicHtmlClasses } from '../../utils/dynamic-html-classes/dynamic-html-classes.js'
+import useCheckParams from "../../../reusable-logic/custom-hooks/use-check-params.js"
+import  { dynamicHtmlClasses } from '../../../utils/dynamic-html-classes/dynamic-html-classes.js'
 
 import './tabs.css'
 
@@ -20,9 +20,11 @@ function Tabs(props) {
                                 props.class.active, 
                                 props.class.inactive)
                         } planet={planetName}>
+
                             <Link to={`/${planetName}/${eachItem.parameter}`}>
                                 {eachItem.text}
                             </Link>
+                            
                         </li>
                     )
                 })

@@ -22,35 +22,35 @@ body {
   --border-color: rgba(255, 255, 255, 0.2);
 }
 
-.mercury, [planet=mercury]::before  {
-  background-color: #419EBB;
+.mercury, [planet=mercury]::before {
+  background-color: #419EBB !important;
 }
 
 .venus, [planet=venus]::before  {
-  background-color: #EDA249;
+  background-color: #EDA249 !important
 }
 
 .earth, [planet=earth]::before {
-  background-color: #6f2ed6;
+  background-color: #6f2ed6 !important;
 }
 .mars, [planet=mars]::before  {
-  background-color: #D14C32;
+  background-color: #D14C32 !important;
 }
 
 .jupiter, [planet=jupiter]::before {
-  background-color: #D83A34;
+  background-color: #D83A34 !important;
 }
 
 .saturn, [planet=saturn]::before  {
-  background-color: #CD5120;
+  background-color: #CD5120 !important;
 }
 
 .uranus, [planet=uranus]::before {
-  background-color: #1ec2a4;
+  background-color: #1ec2a4 !important;
 }
 
 .neptune, [planet=neptune]::before {
-  background-color: #2d68f0;
+  background-color: #2d68f0 !important;
 }
 
 h1 {

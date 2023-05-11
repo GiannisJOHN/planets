@@ -1,4 +1,4 @@
-import data from '../../data/data.json'
+import data from '../../../data/data.json'
 import {useParams} from 'react-router-dom'
 import StatsBox from '../stats-box/stats-box'
 import './stats-container.css'

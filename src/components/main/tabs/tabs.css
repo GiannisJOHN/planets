@@ -19,10 +19,14 @@
 .planet-desktop-tabs-item-is-active {
     border: none;
 }
+
+
 .planet-desktop-tabs-item:hover {
     background-color: var(--hover-background);
     border: none;
 }
+
+
 /*mobile styles*/
 .planet-mobile-tabs {
     display: none;

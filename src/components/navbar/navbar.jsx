@@ -2,9 +2,10 @@
 import { Link } from "react-router-dom"
 import  { dynamicHtmlClasses } from '../../utils/dynamic-html-classes/dynamic-html-classes.js'
 import { useState } from "react"
-import useCheckParams from "../../custom-hooks/use-check-params.js"
+import useCheckParams from "../../reusable-logic/custom-hooks/use-check-params.js"
 //css
 import './navbar.css'
+
 global.matchMedia = global.matchMedia || function() {
     return {
         matches : false,
@@ -37,6 +38,11 @@ function Navbar() {
         }
     }
     
+    function closeMobileMenuOnClick() {
+        if (mobileMenuOnScreen) {
+            mobileMenuClosed ? setmobileMenuClosed(false) : setmobileMenuClosed(true)
+        }
+    }
 
     let htmlClasses = {
         active : `navbar-list-item is-active ${planetName}`,
@@ -52,10 +58,12 @@ function Navbar() {
                 {
                     planets.map((eachItem) => {
                         return (
-                        <li className={dynamicHtmlClasses(planetName, eachItem, htmlClasses.active, htmlClasses.inactive)} mobile='true' planet={eachItem} onClick={
-                            () => {mobileMenuClosed ? setmobileMenuClosed(false) : setmobileMenuClosed(true)}
-                        }>
-                        <Link className='navbar-list-item-link' to={`/${eachItem}/overview`} >{eachItem}</Link>
+                        <li className={dynamicHtmlClasses(planetName, eachItem, htmlClasses.active, htmlClasses.inactive)} mobile='true' planet={eachItem} 
+                        
+                        onClick={closeMobileMenuOnClick}>
+
+                            <Link className='navbar-list-item-link' to={`/${eachItem}/overview`} >{eachItem}</Link>
+
                         </li>
                         )
                     })

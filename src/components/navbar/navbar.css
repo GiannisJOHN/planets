@@ -24,7 +24,7 @@
     flex-direction: column;
     justify-content: center;
     position: relative;
-    background-color: transparent;
+    background-color: transparent !important;
 }
 
 .navbar-list-item-link {

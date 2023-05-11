@@ -1,8 +1,8 @@
 import Tabs from '../tabs/tabs.jsx'
-import tabsHOC from '../../high-order-components/tabs-HOC.js'
+import tabsHOC from '../../../reusable-logic/high-order-components/tabs-HOC.js'
+import useCheckParams from '../../../reusable-logic/custom-hooks/use-check-params.js'
 
 import './planet-information.css'
-import useCheckParams from '../../custom-hooks/use-check-params.js'
 
 function PlanetInformation(props) {
     let planetName = useCheckParams()[0]
